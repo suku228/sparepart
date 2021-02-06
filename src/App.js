@@ -63,6 +63,7 @@ function App() {
         )}
         {index === 1 && (
           <div>
+            <h1>Sparepart information</h1>
             <table>
               <thead>
                 <tr>
