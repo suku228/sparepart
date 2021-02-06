@@ -102,11 +102,11 @@ function useSpareparts() {
         model:'Dezire',
         year:'2019'
       },
-      // {
-      //   part:'zzzz',
-      //   model:'xxx',
-      //   year:'2020'
-      // }
+      {
+        part:'test2020',
+        model:'test',
+        year:'2020'
+      }
     ];
     return spareParts1;
 }

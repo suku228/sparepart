@@ -79,11 +79,13 @@ function App() {
                     <tr key={k}>
                       <td>{row}</td>
                       {filteredCols.map((col, k) => {
-                        return spareParts.map((spare) => {
+                        let _tempsparepart = ''
+                         spareParts.map((spare) => {
                           if (spare.model === row && spare.year === col) {
-                            return <td key={k}>{spare.part}</td>;
+                            _tempsparepart = spare.part;
                           }
                         });
+                        return <td>{_tempsparepart}</td>
                       })}
                     </tr>
                   );
