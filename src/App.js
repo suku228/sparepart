@@ -44,7 +44,7 @@ function App() {
   const locationHandler = (event) => {
     setLocation(event.target.value);
     console.log(event.target.value)
-    if(event.target.value === 'mumbai')
+    if(event.target.value.toUpperCase() === 'MUMBAI')
     setError(false)
     else 
     setError(true)
@@ -134,7 +134,7 @@ function App() {
         }
         {index === 0 && (
           <div>
-            <button onClick={() => clickHandler(1)} disabled={location!=='mumbai'}>Next </button>
+            <button onClick={() => clickHandler(1)} disabled={location.toUpperCase() !=='MUMBAI'}>Next </button>
           </div>
         )}
 
